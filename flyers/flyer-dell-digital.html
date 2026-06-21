@@ -15,11 +15,8 @@ body{font-family:'DM Sans',sans-serif;background:#04080F;color:#E8F4FF;min-heigh
 /* ── HEADER ── */
 .header{text-align:center;margin-bottom:48px;position:relative}
 .header::before{content:'';position:absolute;top:-40px;left:50%;transform:translateX(-50%);width:600px;height:300px;background:radial-gradient(ellipse,rgba(232,96,10,0.15),transparent 70%);pointer-events:none}
-.logo-row{display:flex;align-items:center;justify-content:center;gap:14px;margin-bottom:20px}
-.logo-badge{width:52px;height:52px;background:linear-gradient(135deg,#C8520A,#FF8030);border-radius:12px;display:flex;align-items:center;justify-content:center;font-family:'Orbitron',monospace;font-weight:900;font-size:18px;color:#fff;box-shadow:0 0 24px rgba(232,96,10,0.5)}
-.logo-text h1{font-family:'Orbitron',monospace;font-size:22px;font-weight:900;letter-spacing:3px}
-.logo-text h1 span{color:#E8600A}
-.logo-text p{font-size:10px;color:#6B8CAE;letter-spacing:2px;text-transform:uppercase}
+.logo-row{display:flex;align-items:center;justify-content:center;gap:14px;margin-bottom:8px}
+.logo-img{width:220px;height:auto;filter:drop-shadow(0 4px 18px rgba(232,96,10,0.35))}
 .header-tag{display:inline-block;background:rgba(232,96,10,0.1);border:1px solid rgba(232,96,10,0.3);color:#FF8030;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:6px 18px;border-radius:30px;margin-bottom:18px}
 .header h2{font-family:'Orbitron',monospace;font-size:clamp(20px,4vw,32px);font-weight:900;line-height:1.15;margin-bottom:10px}
 .header h2 .or{color:#E8600A}
@@ -105,12 +102,9 @@ body{font-family:'DM Sans',sans-serif;background:#04080F;color:#E8F4FF;min-heigh
   <!-- HEADER -->
   <div class="header">
     <div class="logo-row">
-      <div class="logo-badge">D</div>
-      <div class="logo-text">
-        <h1>DELL <span>DIGITAL</span></h1>
-        <p>Consulting Numérique · Lomé, Togo</p>
-      </div>
+      <img src="../assets/logo-dell-digital.png" alt="Dell Digital — Consulting Numérique" class="logo-img">
     </div>
+    <p style="font-size:11px;color:#6B8CAE;letter-spacing:1px;text-transform:uppercase;margin-top:-8px;margin-bottom:18px">Lomé, Togo 🇹🇬</p>
     <div class="header-tag">🚀 Nos Produits Phares 2026</div>
     <h2>L'Intelligence Artificielle<br><span class="or">au service de votre business</span></h2>
     <p>Deux solutions concrètes pour transformer votre quotidien professionnel avec l'IA — accessibles, pratiques et adaptées au marché africain.</p>
