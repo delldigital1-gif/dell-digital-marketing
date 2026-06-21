@@ -27,7 +27,12 @@ body{font-family:'DM Sans',sans-serif;background:#04080F;color:#E8F4FF;min-heigh
 .produit::before{content:'';position:absolute;top:0;left:0;right:0;height:3px}
 .produit.orange::before{background:linear-gradient(90deg,#E8600A,#FF9B55)}
 .produit.blue::before{background:linear-gradient(90deg,#0076CE,#00D4FF)}
-.produit-header{display:flex;align-items:flex-start;gap:16px;margin-bottom:20px}
+.produit-header{display:flex;align-items:flex-start;gap:16px;margin-bottom:20px;flex-wrap:wrap}
+.produit-cta{flex-shrink:0;margin-left:auto;align-self:center;text-decoration:none;padding:9px 18px;border-radius:24px;font-size:12.5px;font-weight:700;white-space:nowrap;transition:transform .15s,opacity .15s;display:inline-block}
+.produit-cta:hover{transform:translateY(-1px);opacity:.92}
+.produit.orange .produit-cta{background:linear-gradient(135deg,#E8600A,#FF8030);color:#fff;box-shadow:0 4px 14px rgba(232,96,10,.35)}
+.produit.blue .produit-cta{background:linear-gradient(135deg,#0076CE,#00D4FF);color:#fff;box-shadow:0 4px 14px rgba(0,118,206,.35)}
+@media (max-width:520px){.produit-cta{margin-left:0;margin-top:6px;width:100%;text-align:center}}
 .produit-icon{width:54px;height:54px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:26px;flex-shrink:0}
 .produit.orange .produit-icon{background:rgba(232,96,10,0.15);border:1px solid rgba(232,96,10,0.3)}
 .produit.blue .produit-icon{background:rgba(0,118,206,0.15);border:1px solid rgba(0,118,206,0.3)}
@@ -119,6 +124,7 @@ body{font-family:'DM Sans',sans-serif;background:#04080F;color:#E8F4FF;min-heigh
         <div class="produit-title">Formation & Installation<br>d'un Assistant IA Personnel</div>
         <div class="produit-sub">Session en ligne · Max 20 personnes · Ouvert à tous</div>
       </div>
+      <a class="produit-cta" href="https://wa.me/22898069111?text=Bonjour%2C%20je%20souhaite%20m%27inscrire%20%C3%A0%20la%20formation%20Assistant%20IA%20Personnel." target="_blank" rel="noopener">📝 S'inscrire</a>
     </div>
 
     <div class="content-grid">
@@ -179,6 +185,7 @@ body{font-family:'DM Sans',sans-serif;background:#04080F;color:#E8F4FF;min-heigh
         <div class="produit-title">Assistant IA WhatsApp Business<br>pour l'Hôtellerie & Restauration</div>
         <div class="produit-sub">Chatbot intelligent · Disponible 24h/24 · 7j/7</div>
       </div>
+      <a class="produit-cta" href="mailto:delldigital1@gmail.com?subject=Demande%20de%20devis%20%E2%80%94%20Assistant%20IA%20WhatsApp%20H%C3%B4tellerie%20%26%20Restauration&body=Bonjour%2C%0A%0AJe%20souhaite%20obtenir%20un%20devis%20personnalis%C3%A9%20pour%20l%27Assistant%20IA%20WhatsApp%20Business%20%28H%C3%B4tellerie%20%26%20Restauration%29.%0A%0ANom%20de%20mon%20%C3%A9tablissement%20%3A%0AType%20%28restaurant%20/%20h%C3%B4tel%29%20%3A%0A%0AMerci%20de%20me%20recontacter%20pour%20planifier%20un%20audit%20rapide.%0A%0ACordialement." target="_blank" rel="noopener">💼 Demander un devis</a>
     </div>
 
     <div class="bot-features">
