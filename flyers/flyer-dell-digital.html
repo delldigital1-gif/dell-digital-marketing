@@ -81,7 +81,8 @@ body{font-family:'DM Sans',sans-serif;background:#04080F;color:#E8F4FF;min-heigh
 .cta h3 span{color:#E8600A}
 .cta p{font-size:13px;color:#6B8CAE;margin-bottom:18px;position:relative}
 .contacts{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;position:relative}
-.contact-item{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:10px 18px;display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600}
+.contact-item{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:10px 18px;display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;text-decoration:none;transition:background .2s,transform .15s;cursor:pointer}
+.contact-item:hover{background:rgba(255,255,255,0.1);transform:translateY(-1px)}
 .contact-item.wa{border-color:rgba(37,211,102,0.3);color:#25D366}
 .contact-item.email{border-color:rgba(0,212,255,0.3);color:#00D4FF}
 .contact-item.web{border-color:rgba(232,96,10,0.3);color:#FF8030}
@@ -245,9 +246,9 @@ body{font-family:'DM Sans',sans-serif;background:#04080F;color:#E8F4FF;min-heigh
     <h3>Prêt à passer à l'action ? <span>Contactez-nous !</span></h3>
     <p>Lomé, Togo · Disponible 7j/7 · Réponse sous 24h</p>
     <div class="contacts">
-      <div class="contact-item wa">📱 +228 98 06 91 11</div>
-      <div class="contact-item email">✉️ delldigital1@gmail.com</div>
-      <div class="contact-item web">🌐 dell-digital.vercel.app</div>
+      <a class="contact-item wa" href="https://wa.me/22898069111" target="_blank" rel="noopener">📱 +228 98 06 91 11</a>
+      <a class="contact-item email" href="mailto:delldigital1@gmail.com">✉️ delldigital1@gmail.com</a>
+      <a class="contact-item web" href="https://www.delldigital-africa.com" target="_blank" rel="noopener">🌐 www.delldigital-africa.com</a>
     </div>
   </div>
 
